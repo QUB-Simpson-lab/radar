@@ -4,7 +4,7 @@
 Rapid Agnostic Detection of All Recombinants - Funded by COG UK (https://www.cogconsortium.uk/) Early Career Funding Scheme
 
 ## Installation
-radar is written in python3 and requires numpy, pandas, and [nextclade](https://github.com/nextstrain/nextclade/blob/master/docs/user/nextclade-cli.md), so it is likely for genomic surveillance researchers that an existing python environment will suffice to run radar. However, should you require or desire a dedicated environment to run radar, an environment can be installed using the following commands using anaconda.
+radar is written in python3 and requires [numpy](https://github.com/numpy/numpy), [pandas](https://github.com/pandas-dev/pandas), and [nextclade](https://github.com/nextstrain/nextclade/blob/master/docs/user/nextclade-cli.md), so it is likely for genomic surveillance researchers that an existing python environment will suffice to run radar. However, should you require or desire a dedicated environment to run radar, an environment can be installed using the following commands using anaconda.
 
 ```
 conda create -n radar
@@ -24,9 +24,9 @@ The alpha release of radar is (to be - expected by 31 Mar 2023) contained in rad
 ```./radar.py --ref MN908947.3.fa --in sequences.fa --dataset ./nextclade/sars-cov-2```
 
 ### What radar is doing
-radar works by systematically dividing each consensus FASTA sequence into windows and uses nextclade/nextstrain to assign a clade to each. The tool applies unbiased window-based lineage determinations to rapidly identify putative recombinant sequences, and subsequently applies higher resolution SNV-based analysis to determine breakpoints while assessing confidence in the lineage determinations. Futher details will be elucidated in a future scientific pre-print or peer-reviewed publication. In order to avoid confusion, the source of radar will be limited
+radar works by systematically dividing each consensus FASTA sequence into windows and uses nextclade/nextstrain to assign a clade to each. The tool applies unbiased window-based lineage determinations to rapidly identify putative recombinant sequences, and subsequently applies higher resolution SNV-based analysis to determine breakpoints while assessing confidence in the lineage determinations. Futher details will be elucidated in a future scientific pre-print or peer-reviewed publication.
 
 ### radar outputs
-radar_results.tsv will provide the user with the following:
+radar_results.csv will provide the user with the following:
    the list of sample_ids (obtained from the fasta headers) as to which are samples are deemed to be recombinant.
    and for each sample: the list of recombinant 'breakpoints' (i.e., where the sequence changes from one clade to another) and the constitutent clades for each window.
