@@ -13,7 +13,7 @@ conda install numpy pandas nextclade -c bioconda -c conda-forge
 ```
 
 ## Running radar
-###Foreword
+### Foreword
 The alpha release of radar is contained in radar.py, and will be updated until the envisaged publication of the tool. As a project still under development, the software will not be as flexible or robust as its eventual final release. Further, it is envisioned that the running and installation process of radar will change.
 
 ### Required Inputs
