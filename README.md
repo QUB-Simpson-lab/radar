@@ -14,7 +14,7 @@ conda install numpy pandas nextclade -c bioconda -c conda-forge
 
 ## Running radar
 ### Foreword
-The alpha release of radar is contained in radar.py, and will be updated until the envisaged publication of the tool. As a project still under development, the software will not be as flexible or robust as its eventual final release. Further, it is envisioned that the running and installation process of radar will change.
+The alpha release of radar is (to be - expected by 31 Mar 2023) contained in radar.py, and will be updated periodically. As this project still under development, the software will not be as flexible or robust as its eventual final release. Further, it is envisioned that the running and installation process of radar will change.. We are actively working on improving and refining the code to ensure its quality and stability.
 
 ### Required Inputs
 1. A reference sequence ```--ref```
@@ -24,7 +24,7 @@ The alpha release of radar is contained in radar.py, and will be updated until t
 ```./radar.py --ref MN908947.3.fa --in sequences.fa --dataset ./nextclade/sars-cov-2```
 
 ### What radar is doing
-radar works by systematically dividing each consensus FASTA sequence into windows and uses nextclade/nextstrain to assign a clade to each. The tool applies unbiased window-based lineage determinations to rapidly identify putative recombinant sequences, and subsequently applies higher resolution SNV-based analysis to determine breakpoints while assessing confidence in the lineage determinations. Futher details will be elucidated in a future scientific pre-print or peer-reviewed publication.
+radar works by systematically dividing each consensus FASTA sequence into windows and uses nextclade/nextstrain to assign a clade to each. The tool applies unbiased window-based lineage determinations to rapidly identify putative recombinant sequences, and subsequently applies higher resolution SNV-based analysis to determine breakpoints while assessing confidence in the lineage determinations. Futher details will be elucidated in a future scientific pre-print or peer-reviewed publication. In order to avoid confusion, the source of radar will be limited
 
 ### radar outputs
 radar_results.tsv will provide the user with the following:
