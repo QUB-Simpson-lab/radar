@@ -14,7 +14,7 @@ conda install numpy pandas nextclade -c bioconda -c conda-forge
 
 ## Running radar
 ### Foreword
-The alpha release of radar is (to be - expected by 31 Mar 2023) contained in radar.py, and will be updated periodically. As this project still under development, the software will not be as flexible or robust as its eventual final release. Further, it is envisioned that the running and installation process of radar will change.. We are actively working on improving and refining the code to ensure its quality and stability.
+The alpha release of radar is (to be - expected by 31 Mar 2023) contained in radar.py, and will be updated periodically. As this project still under development, the software will not be as flexible or robust as its eventual final release. Further, it is envisioned that the running and installation process of radar will change. We are actively working on improving and refining the code to ensure its quality and stability, and extending its applicability to a wider variety of use cases.
 
 ### Required Inputs
 1. A reference sequence ```--ref```
