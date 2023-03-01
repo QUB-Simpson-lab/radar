@@ -20,7 +20,8 @@ The alpha release of radar is contained in radar.py, and will be updated until t
 1. A reference sequence ```--ref```
 2. A multiple sequence fasta of consensus sequences with which to detect recombinants from ```--in```
 3. The nextclade dataset of the virus in question. ```--dataset```
-e.g., ```./radar.py --ref MN908947.3.fa --in sequences.fa --dataset ./nextclade/sars-cov-2```
+
+```./radar.py --ref MN908947.3.fa --in sequences.fa --dataset ./nextclade/sars-cov-2```
 
 ### What radar is doing
 radar works by systematically dividing each consensus FASTA sequence into windows and uses nextclade/nextstrain to assign a clade to each. The tool applies unbiased window-based lineage determinations to rapidly identify putative recombinant sequences, and subsequently applies higher resolution SNV-based analysis to determine breakpoints while assessing confidence in the lineage determinations. Futher details will be elucidated in a future scientific pre-print or peer-reviewed publication.
